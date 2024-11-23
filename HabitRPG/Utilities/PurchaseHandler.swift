@@ -14,30 +14,30 @@ import Habitica_Models
 class PurchaseHandler: NSObject, SKPaymentTransactionObserver {
     @objc static let shared = PurchaseHandler()
 
-    static let IAPIdentifiers = ["com.habitrpg.ios.Habitica.4gems", "com.habitrpg.ios.Habitica.21gems",
-                              "com.habitrpg.ios.Habitica.42gems", "com.habitrpg.ios.Habitica.84gems"
+    static let IAPIdentifiers = ["com.habitrpg.ios.fede.Habitica.4gems", "com.habitrpg.ios.fede.Habitica.21gems",
+                              "com.habitrpg.ios.fede.Habitica.42gems", "com.habitrpg.ios.fede.Habitica.84gems"
     ]
-    static let subscriptionIdentifiers = ["subscription1month", "com.habitrpg.ios.habitica.subscription.3month",
-                       "com.habitrpg.ios.habitica.subscription.6month", "com.habitrpg.ios.habitica.subscription.12month"
+    static let subscriptionIdentifiers = ["subscription1month", "com.habitrpg.ios.fede.habitica.subscription.3month",
+                       "com.habitrpg.ios.fede.habitica.subscription.6month", "com.habitrpg.ios.fede.habitica.subscription.12month"
     ]
-    static let noRenewSubscriptionIdentifiers = ["com.habitrpg.ios.habitica.norenew_subscription.1month", "com.habitrpg.ios.habitica.norenew_subscription.3month",
-                                          "com.habitrpg.ios.habitica.norenew_subscription.6month", "com.habitrpg.ios.habitica.norenew_subscription.12month"
+    static let noRenewSubscriptionIdentifiers = ["com.habitrpg.ios.fede.habitica.norenew_subscription.1month", "com.habitrpg.ios.fede.habitica.norenew_subscription.3month",
+                                          "com.habitrpg.ios.fede.habitica.norenew_subscription.6month", "com.habitrpg.ios.fede.habitica.norenew_subscription.12month"
     ]
     
-    static let gryphatriceIdentifier = "com.habitrpg.ios.Habitica.pets.Gryphatrice_Jubilant"
+    static let gryphatriceIdentifier = "com.habitrpg.ios.fede.Habitica.pets.Gryphatrice_Jubilant"
     
     static let habiticaSubMapping = [
         "subscription1month": "basic_earned",
-        "com.habitrpg.ios.habitica.subscription.3month": "basic_3mo",
-        "com.habitrpg.ios.habitica.subscription.6month": "basic_6mo",
-        "com.habitrpg.ios.habitica.subscription.12month": "basic_12mo"
+        "com.habitrpg.ios.fede.habitica.subscription.3month": "basic_3mo",
+        "com.habitrpg.ios.fede.habitica.subscription.6month": "basic_6mo",
+        "com.habitrpg.ios.fede.habitica.subscription.12month": "basic_12mo"
     ]
     
     static let habiticaSubMappingReversed = [
         "basic_earned": "subscription1month",
-        "basic_3mo": "com.habitrpg.ios.habitica.subscription.3month",
-        "basic_6mo": "com.habitrpg.ios.habitica.subscription.6month",
-        "basic_12mo": "com.habitrpg.ios.habitica.subscription.12month"
+        "basic_3mo": "com.habitrpg.ios.fede.habitica.subscription.3month",
+        "basic_6mo": "com.habitrpg.ios.fede.habitica.subscription.6month",
+        "basic_12mo": "com.habitrpg.ios.fede.habitica.subscription.12month"
     ]
     
     private let itunesSharedSecret = Secrets.itunesSharedSecret

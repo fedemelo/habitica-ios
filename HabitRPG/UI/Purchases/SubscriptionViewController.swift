@@ -19,8 +19,8 @@ import SwiftUIX
 class SubscriptionViewController: BaseTableViewController {
 
     @IBOutlet weak private var restorePurchaseButton: UIButton!
-    let identifiers = ["subscription1month", "com.habitrpg.ios.habitica.subscription.3month",
-                       "com.habitrpg.ios.habitica.subscription.6month", "com.habitrpg.ios.habitica.subscription.12month"
+    let identifiers = ["subscription1month", "com.habitrpg.ios.fede.habitica.subscription.3month",
+                       "com.habitrpg.ios.fede.habitica.subscription.6month", "com.habitrpg.ios.fede.habitica.subscription.12month"
     ]
 
     private let userRepository = UserRepository()
